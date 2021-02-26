@@ -37,6 +37,13 @@ class Transaction {
         this.locktime = 0;
         this.ins = [];
         this.outs = [];
+        this.DEFAULT_SEQUENCE = 4294967295;
+        this.SIGHASH_ALL = 1;
+        this.SIGHASH_NONE = 2;
+        this.SIGHASH_SINGLE = 3;
+        this.SIGHASH_ANYONECANPAY = 128;
+        this.ADVANCED_TRANSACTION_MARKER = 0;
+        this.ADVANCED_TRANSACTION_FLAG = 1;
     }
     static fromBuffer(buffer, _NO_STRICT) {
         let offset = 0;

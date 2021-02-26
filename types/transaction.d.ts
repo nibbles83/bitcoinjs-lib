@@ -16,13 +16,13 @@ export interface Input {
     witness: Buffer[];
 }
 export declare class Transaction {
-    static readonly DEFAULT_SEQUENCE = 4294967295;
-    static readonly SIGHASH_ALL = 1;
-    static readonly SIGHASH_NONE = 2;
-    static readonly SIGHASH_SINGLE = 3;
-    static readonly SIGHASH_ANYONECANPAY = 128;
-    static readonly ADVANCED_TRANSACTION_MARKER = 0;
-    static readonly ADVANCED_TRANSACTION_FLAG = 1;
+    static readonly DEFAULT_SEQUENCE;
+    static readonly SIGHASH_ALL;
+    static readonly SIGHASH_NONE;
+    static readonly SIGHASH_SINGLE;
+    static readonly SIGHASH_ANYONECANPAY;
+    static readonly ADVANCED_TRANSACTION_MARKER;
+    static readonly ADVANCED_TRANSACTION_FLAG;
     static fromBuffer(buffer: Buffer, _NO_STRICT?: boolean): Transaction;
     static fromHex(hex: string): Transaction;
     static isCoinbaseHash(buffer: Buffer): boolean;
